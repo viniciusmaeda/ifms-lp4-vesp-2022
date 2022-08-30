@@ -26,3 +26,14 @@ Remover uma pasta
 Abrir o VS Code na pasta do projeto
 
 > code .
+
+## Principais comandos Node
+
+Criar um projeto node vazio (com preenchimento dos dados do projeto)
+
+> npm init **nome-do-projeto**
+
+Criar um projeto node vazio (sem preenchimento dos dados do projeto)
+
+> npm init **nome-do-projeto** -y
+
