@@ -10,47 +10,51 @@ const app = express();
 // definição da rota para o método GET
 app.get("/", (req, res) => {
   // endereço de acesso: http://localhost:3000/
-  res.send("Home");
+  res.send("Página inicial");
 });
 
 /********************************************************/
-// ROTAS PARA OS MODELOS DE VEÍCULOS
+// ROTAS PARA OS VEÍCULOS
 
 // definição da rota para o método GET
-app.get("/model", (req, res) => {
-  // endereço de acesso: http://localhost:3000/model
-  res.send("Model - get");
+// utilizado para obter dados/página de um servidor
+app.get("/veiculo", (req, res) => {
+  // endereço de acesso: http://localhost:3000/veiculo
+  res.send("Veículo - get");
 
-  // aqui será utilizado para buscar os dados dos veículos
+  // aqui será implementado o código para  para buscar os dados dos veículos
 });
 
 // definição da rota para o método POST
-app.post("/model", (req, res) => {
-  // endereço de acesso: http://localhost:3000/model
-  res.send("Model - post");
+// utilizado para criar algo novo no servidor (BD)
+app.post("/veiculo", (req, res) => {
+  // endereço de acesso: http://localhost:3000/veiculo
+  res.send("Veículo - post");
 
-  // aqui será utilizado para salvar veículos
+  // aqui será implementado o código para salvar veículos
 });
 
 // definição da rota para o método PUT
-app.put("/model", (req, res) => {
-  // endereço de acesso: http://localhost:3000/model
-  res.send("Model - put");
+// utilizado para atualizar algo existente
+app.put("/veiculo", (req, res) => {
+  // endereço de acesso: http://localhost:3000/veiculo
+  res.send("Veículo - put");
 
-  // aqui será utilizado para atualizar dados de veículos
+  // aqui será implementado o código para atualizar dados de veículo existente
 });
 
 // definição da rota para o método DELETE
-app.delete("/model", (req, res) => {
-  // endereço de acesso: http://localhost:3000/model
-  res.send("Model - delete");
+// utilizado para excluir algo existente
+app.delete("/veiculo", (req, res) => {
+  // endereço de acesso: http://localhost:3000/veiculo
+  res.send("Veículo - delete");
 
-  // aqui será utilizado para excluir veículos
+  // aqui será implementado o código para excluir um veículo
 });
 
 // número da porta em que o servidor irá rodar
 const port = 3000;
-app.listen(port, () => console.log(`Running on port ${port}`));
+app.listen(port, console.log(`Servidor rodando na porta ${port}`));
 
 /**
  * Express
