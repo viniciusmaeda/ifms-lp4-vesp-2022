@@ -31,9 +31,8 @@ Abrir o VS Code na pasta do projeto
 
 Criar um projeto node vazio (com preenchimento dos dados do projeto)
 
-> npm init **nome-do-projeto**
+> npm init
 
 Criar um projeto node vazio (sem preenchimento dos dados do projeto)
 
-> npm init **nome-do-projeto** -y
-
+> npm init -y
